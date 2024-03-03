@@ -18,7 +18,7 @@ export default async function Home() {
           <p>From Home Page</p>
         </>
       ) : (
-        <p>You Must Logged IN</p>
+        <p>You Must Logged To View Content In APP</p>
       )}
     </main>
   );

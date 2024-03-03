@@ -19,7 +19,7 @@ export default async function Protected() {
             <img src={session.user.image} className="h-24 w-24 rounded-full" />
           ) : null}
 
-          <p>From Protected Page</p>
+          <p>There is No Protected Just Kidding 😉</p>
         </>
       ) : (
         <p>Protected Content You Must BE Logged In To Continue</p>
