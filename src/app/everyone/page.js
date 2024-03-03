@@ -1,6 +1,10 @@
 import { getServerSession } from "next-auth";
 import React from "react";
 import { options } from "../api/auth/[...nextauth]/options";
+export const metadata = {
+  title: "Everyone Page",
+  description: "Everyone Page",
+};
 
 export default async function Everone() {
   const session = await getServerSession(options);

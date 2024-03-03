@@ -1,7 +1,10 @@
 import { getServerSession } from "next-auth";
 import { options } from "./api/auth/[...nextauth]/options";
 
-import Navbar from "./components/Navbar";
+export const metadata = {
+  title: "Home Page",
+  description: "Home Page",
+};
 
 export default async function Home() {
   const session = await getServerSession(options);

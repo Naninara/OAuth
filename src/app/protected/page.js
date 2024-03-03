@@ -3,6 +3,11 @@ import { redirect } from "next/navigation";
 import React from "react";
 import { options } from "../api/auth/[...nextauth]/options";
 
+export const metadata = {
+  title: "Protected Page",
+  description: "Protected Page",
+};
+
 export default async function Protected() {
   const session = await getServerSession(options);
 
